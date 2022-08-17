@@ -1,0 +1,361 @@
+﻿<%--
+'-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'File Name          : Site.Master
+'Function           : 
+'Created By         : 
+'Created on         : 
+'Revision History   : Modified by Gagan Kalyana on 26-Mar-2015 and 31-Mar-2015 for side menu Toggle 
+'                   : Modified by Gagan Kalyana on 2015-Apr-02, 2015-Apr-06, 2015-Apr-08, 2015-Apr-13 for auto refresh of application
+'                   : Commented by Govind on 2015-Mar-19 for removal of running Datetime of right top corner
+'                   : Added by Gagan Kalyana on 2015-Mar-22 for setting browser mode to IE8 only
+'                   : Modified by Gagan Kalyana on 2015-Apr-27 for FC63 Anken
+' 		              Changes has been done related to Page Browsing History.
+'                   : Modified by Gagan Kalyana on 2015-May-08 for FC63 Anken
+' 		              Modifications done for proper japanese caption display
+'                   : Modified by Gagan Kalyana on 2015-May-13 for FC63 Anken (IS3 Req. No. ER/150513002)
+'                     When the screen refresh has been executed, Graph is displayed.When a number is being displayed,Please be in the numerical display.
+'                   : Modified by Gagan Kalyana on 2015-May-15 for FC63 Anken (IS3 Req. No. ER/150515001)
+' 		              Changes done to Move Right Top Date Label toward a little left.
+'                   : Modified by Gagan Kalyana on 2015-Dec-17 for Support and Maintenance (IS3 Req. No. ER/151217001)
+' 		              Changes done to add Color Switch on the Work Progress screen (Shift.aspx).
+'                   : Modified by Gagan Kalyana on 2016-Feb-01 for FC66-GLOBAL VISUALIZING IN-ASSEMBLY SYSTEM_PHASE2
+'        		      1. Changes has been done to remove Page Footer Description.
+'                     2. Changes has been done to modify "Menu" of Mieruka Web Application
+'                   : Modified by Gagan Kalyana on 2017-Mar-07 for FC69_GVIA-Phase-III-I
+'                     Changes has been done to Hide the side Menu in case of GVIA simple version.
+'-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------%>
+<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<%--Added By Gagan Kalyana on 2015-Apr-06 [Start]--%>
+<%@ Import Namespace="System.Data" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
+<%--Added By Gagan Kalyana on 2015-Apr-06 [End]--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <%--Added by Gagan Kalyana on 2015-Mar-22--%>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+    <title><%=ReadWriteXml.getAppResource("1001")%> </title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />  
+    <link href="~/Styles/calenda.css" rel="stylesheet" type="text/css" />   
+    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    <script type="text/javascript" src="Scripts/datepickr.js"></script> 
+    <%--Added by Gagan Kalyana on 2016-Feb-01--%>
+    <script type="text/javascript" src="Scripts/popcalendar.js"></script>   
+	<script type="text/javascript">
+	    $(window).load(function () {
+	        $('#loading').fadeOut(500).remove();
+	    })
+	</script>
+    <%--<%
+        Dim m_id As Integer = 0
+        If Request.QueryString("id") <> Nothing Then
+            m_id = CDbl(Request("id"))
+        End If
+        If m_id = 0 Then        
+    %>  
+        <meta http-equiv="refresh" content="300"/>
+    <%End If%>--%>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+<%--Added by Gagan Kalyana on 26-Mar-2015 [Start]--%>
+    <style type="text/css">
+        .show {
+        color:black;
+        background-color:white;
+        }
+        .hide {
+        color:white;
+        background-color:black;
+        }
+        /*Commented and added by Gagan Kalyana on 2015-May-08[Start]*/
+        .menu_item_button {
+        margin-right:95px;
+        }
+        /*Modified by Gagan Kalyana on 2015-May-08[End]*/
+    </style>
+    <script type="text/javascript">
+        function menuToggle() {
+            var val = $('#btnToggle').attr('value') == ">>" ? "<<" : ">>";
+            $('#btnToggle').attr('value', val);
+            $('#menu').toggle();
+            if (val == "<<")
+            //Commented and added by Gagan Kalyana on 2015-May-08[Start]
+            //{ document.getElementById("btnToggle").className = "show"; }
+            { document.getElementById("btnToggle").className = "show menu_item_button"; }
+            else {
+                document.getElementById("btnToggle").className = "hide";
+            }
+        }
+
+        //Added by Gagan Kalyana on 2015-Dec-17 [Start]
+        function whiteTheme(){
+            $(".shifttable").toggleClass('shifttable shifttable_inverse');
+            $(".divshift").toggleClass('divshift divshift_inverse');
+            $(".body").toggleClass('body body_inverse');
+            $(".header").toggleClass('header header_inverse');
+            $(".header_title_1").toggleClass('header_title_1 header_title_1_inverse');
+            $(".main_1").toggleClass('main_1 main_1_inverse');
+            $(".main_left").toggleClass('main_left main_left_inverse');
+            $(".loginDisplay").toggleClass('loginDisplay loginDisplay_inverse');
+            $(".boxBorder").toggleClass('boxBorder boxBorder_inverse');
+            $(".fontshift_head").toggleClass('fontshift_head fontshift_head_inverse');
+            $(".fontshift_1").toggleClass('fontshift_1 fontshift_1_inverse');
+            $(".main_left_menu_1").toggleClass('main_left_menu_1 main_left_menu_1_inverse');
+            $(".main_left_menu_2").toggleClass('main_left_menu_2 main_left_menu_2_inverse');
+            $(".orangeLabel").toggleClass('orangeLabel orangeLabel_inverse');
+            $(".linkLabel").toggleClass('linkLabel linkLabel_inverse');
+        }
+        function balckTheme()
+        {
+            $(".shifttable_inverse").toggleClass('shifttable_inverse shifttable');
+            $(".divshift_inverse").toggleClass('divshift_inverse divshift');
+            $(".body_inverse").toggleClass('body_inverse body');
+            $(".header_inverse").toggleClass('header_inverse header');
+            $(".header_title_1_inverse").toggleClass('header_title_1_inverse header_title_1');
+            $(".main_1_inverse").toggleClass('main_1_inverse main_1');
+            $(".main_left_inverse").toggleClass('main_left_inverse main_left');
+            $(".loginDisplay_inverse").toggleClass('loginDisplay_inverse loginDisplay');
+            $(".boxBorder_inverse").toggleClass('boxBorder_inverse boxBorder');
+            $(".fontshift_head_inverse").toggleClass('fontshift_head_inverse fontshift_head');
+            $(".fontshift_1_inverse").toggleClass('fontshift_1_inverse fontshift_1');
+            $(".main_left_menu_1_inverse").toggleClass('main_left_menu_1_inverse main_left_menu_1');
+            $(".main_left_menu_2_inverse").toggleClass('main_left_menu_2_inverse main_left_menu_2');
+            $(".orangeLabel_inverse").toggleClass('orangeLabel_inverse orangeLabel');
+            $(".linkLabel_inverse").toggleClass('linkLabel_inverse linkLabel');
+        }
+        function setColor(val) {
+            cookievalue = val + ";";
+            document.cookie = "color=" + cookievalue;
+        }
+        function getColor(cColor) {
+            var color = cColor + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1);
+                if (c.indexOf(color) == 0) {
+                    return c.substring(color.length, c.length);
+                }
+            }
+            return "";
+        }
+        function colorToggle(action) {
+            if (action == "click") {
+                if (getColor("color") == "Color(1)" || getColor("color") == "") {
+                    whiteTheme();
+                    setColor("Color(2)");
+                }
+                else {
+                    balckTheme();
+                    setColor("Color(1)");
+                }
+            }
+            if (action == "refresh" && "<%= hdnPageName.value%>" == "ASP.shift_aspx") {
+                if (getColor("color") == "Color(2)") { whiteTheme(); }
+                else { balckTheme(); }
+            }
+        }
+        //Added by Gagan Kalyana on 2015-Dec-17 [End]
+    </script>
+    <%--Added by Gagan Kalyana on 26-Mar-2015 [End]--%>
+</head>
+<%--Commented and added by Gagan Kalyana on 2015-Dec-17
+<body>--%>
+    <body class="body">
+    <%--Added By Gagan Kalyana on 2015-Apr-06 [Start]--%>
+     <%
+         'Added by Gagan Kalyana on 2015-Apr-08 [Start]
+         Dim obj As New FunctionControl()
+         With hdnInterVal
+             .Value = 5
+             If obj.getValue("Data_Refresh", "1", False).Flag = True Then
+                 .Value = VAL(obj.getValue("Data_Refresh", "1", False).Value.ToString())
+                 If .Value <= 0 Then .Value = 5
+             End If
+             .Value *= 60000
+         End With
+         'Added by Gagan Kalyana on 2015-Apr-08 [End]
+    %>
+      <%--Added By Gagan Kalyana on 2015-Apr-06 [End]--%>
+    <div id="loading"><%=ReadWriteXml.getAppResource("1147")%></div>
+     
+    <form id="Form1" runat="server" > 
+        <%--Added By Gagan Kalyana on 2015-Apr-06--%>
+         <asp:HiddenField runat="server" ID="hdnInterVal" />      
+    <div class="header">            
+            <div class="title"><span class="header_title_1"><%=ReadWriteXml.getAppResource("1002")%></span><span class="header_title_1">[&nbsp;<%=ReadWriteXml.getAppResource("1003")%>&nbsp;]</span></div>
+            <%--Commented and added by Gagan Kalyana on 2015-May-15
+            <div class="loginDisplay" id="date_time"></div>--%>
+            <div class="loginDisplay" id="date_time" style="margin-right:4px"></div>
+    </div>
+    <div class="page">              
+        <div class="main">
+            <%--Modified by Gagan Kalyana on 2017-Mar-07 [Start]--%>
+         <%If strValue = True and (MainContent.Page.GetType().FullName ="ASP.default_aspx" or MainContent.Page.GetType().FullName ="ASP.shift_simple_aspx" or MainContent.Page.GetType().FullName ="ASP.tool_aspx")  Then%>
+            <div style="display:-ms-flexbox;margin-left:40px;width:97%" >
+         <table style="width:100%">
+            <tr >
+                <td style="width:3%;"><ul class="tabrow" style="border:1px solid black" ><a href="Default.aspx"><li id="btnHome"><%=ReadWriteXml.getAppResource("1004")%></li></a></ul></td>
+                <td style="width:3%;"><ul class="tabrow" style="border:1px solid black" ><a href="tool.aspx?id=8"><li id="btnPrint"><%=ReadWriteXml.getAppResource("1288")%></li></a></ul></td>
+                <td style="width:94%"></td>
+            </tr>
+        </table>
+     </div>    <%End If %><%--Modified by Gagan Kalyana on 2017-Mar-07 [End]--%>
+            <asp:Table ID="Table1" runat="server" CellPadding="0" CellSpacing="0" Width="100%">
+                <asp:TableRow VerticalAlign="Top">
+           <%--Commented & Added by Gagan Kalyana on 26-Mar-2015 [Start]--%>
+                    <%--<asp:TableCell Width="138px">--%>
+                    <%--Commented & Added by Gagan Kalyana on 2016-Feb-01
+               <asp:TableCell>--%>
+                    <asp:TableCell ID="sideMenu">
+                   <div class="main_left" style="position:relative">
+                   <%--Commented & Added by Gagan Kalyana on 2015-May-08
+                     <input type="submit"  id="btnToggle" class="show" value="<<" onclick="menuToggle(); return false" /></div>--%>
+                     <input type="submit"  id="btnToggle" class="show menu_item_button" value="<<" onclick="menuToggle(); return false" /></div>
+                       <%--Commented & Added by Gagan Kalyana on 26-Mar-2015 [End]--%>
+                       <div class="main_left" id="menu">
+		            <%--Commented & Added by Gagan Kalyana on 2015-Apr-27--%>
+                           <%--<div class="main_left_menu_1" style="margin-right:95px;"><a href="Default.aspx"><u><%=ReadWriteXml.getAppResource("1004")%></u></a></div>--%>
+			               <%--Commented & Added by Gagan Kalyana on 26-Mar-2015 
+                           <div class="main_left_menu_1" style="margin-right:95px;"><asp:LinkButton runat="server" ID="lbtnHome"><u><%=ReadWriteXml.getAppResource("1004")%></u></asp:LinkButton></div>--%>
+                            <%--Commented & Added by Gagan Kalyana on 2015-May-13--%>
+                            <%--<div class="main_left_menu_1"><asp:LinkButton runat="server" ID="lbtnHome"><u><%=ReadWriteXml.getAppResource("1004")%></u></asp:LinkButton></div>--%>
+                            <div class="main_left_menu_1"><asp:LinkButton runat="server" ID="lbtnHome" onClientClick="javascript:WriteCookie('G')"><u><%=ReadWriteXml.getAppResource("1004")%></u></asp:LinkButton></div>
+                            <div class="main_left_menu_1"><u><%=ReadWriteXml.getAppResource("1005")%></u></div>
+                                <ul class="main_left_menu_2">
+                                <li><%=ReadWriteXml.getAppResource("1006")%>
+                                    <ul>                                   
+				    <%--Commented & Added by Gagan Kalyana on 2015-Apr-27 [Start]
+                                    <li><a href="tool.aspx?id=1" ><%=ReadWriteXml.getAppResource("1007")%></a></li>                                    
+                                    <li><a href="tool.aspx?id=3" ><%=ReadWriteXml.getAppResource("1008")%></a></li>                                    
+                                    <li><a href="tool.aspx?id=5" ><%=ReadWriteXml.getAppResource("1009")%></a></li>
+                                    <li><a href="tool.aspx?id=6" ><%=ReadWriteXml.getAppResource("1010")%></a></li>--%>                                    
+				                    <%--Commented & Added by Gagan Kalyana on 2015-May-13[Start]--%>
+                                                    <%--<li><asp:LinkButton runat="server" ID="lbtnSummery"><%=ReadWriteXml.getAppResource("1007")%></asp:LinkButton></li>                                    
+                                                    <li><asp:LinkButton runat="server" ID="lbtnDaily"><%=ReadWriteXml.getAppResource("1008")%></asp:LinkButton></li>                                   
+                                                    <li><asp:LinkButton runat="server" ID="lbtnMonthly"><%=ReadWriteXml.getAppResource("1009")%></asp:LinkButton></li>
+                                                    <li><asp:LinkButton runat="server" ID="lbtnCompare"><%=ReadWriteXml.getAppResource("1010")%></asp:LinkButton></li>  --%>                            
+                                                    <li><asp:LinkButton runat="server" ID="lbtnSummery" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1007")%></asp:LinkButton></li>                                    
+                                                    <li><asp:LinkButton runat="server" ID="lbtnDaily" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1008")%></asp:LinkButton></li>                                   
+                                                    <li><asp:LinkButton runat="server" ID="lbtnMonthly" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1009")%></asp:LinkButton></li>
+                                                    <li><asp:LinkButton runat="server" ID="lbtnCompare" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1010")%></asp:LinkButton></li>                            
+				                    <%--Commented & Added by Gagan Kalyana on 2015-May-13[End]--%>
+                    <%--Commented & Added by Gagan Kalyana on 2015-Apr-27 [End]--%>
+                                    </ul>
+                                </li>                                   
+                                <li><%=ReadWriteXml.getAppResource("1011")%>
+                                    <ul>
+                                     	<%--Commented & Added by Gagan Kalyana on 2015-Apr-27--%>
+                                        <%--<li><a href="tool.aspx?id=8"><%=ReadWriteXml.getAppResource("1007")%></a></li>--%>
+				                    <%--Commented & Added by Gagan Kalyana on 2015-May-13
+					                <li><asp:LinkButton runat="server" ID="lbtnSummery2"><%=ReadWriteXml.getAppResource("1007")%></asp:LinkButton></li> --%>
+                                    <%--Commented and added by Gagan Kalyana on 2016-Feb-01 [2] [Start]
+                                        <li><asp:LinkButton runat="server" ID="lbtnSummery2" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1007")%></asp:LinkButton></li>--%>
+                                        <li><asp:LinkButton runat="server" ID="lbtnSummery2" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1208")%></asp:LinkButton></li>
+                                        <li><asp:LinkButton runat="server" ID="lbtnEfficiency" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1209")%></asp:LinkButton></li>
+                                        <li><asp:LinkButton runat="server" ID="lbtnParetto" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1211")%></asp:LinkButton></li>
+                                    <%--Commented and added by Gagan Kalyana on 2016-Feb-01 [2] [End]--%>
+                                    </ul>
+                                </li>                                                                                                
+                                </ul>        
+                           <%--Commented by Gagan Kalyana on 2016-Feb-01 [2]--%>                                                    
+                            <%--<div class="main_left_menu_1"><u><%=ReadWriteXml.getAppResource("1012")%></u></div>--%>
+			    	    <%--Commented & Added by Gagan Kalyana on 2015-Apr-27--%>
+                                    <%--<div class="main_left_a"><a href="Search.aspx?id=001"><%=ReadWriteXml.getAppResource("1013")%></a></div>--%>
+				    <%--Commented & Added by Gagan Kalyana on 2015-May-13
+                            <div class="main_left_a"><asp:LinkButton runat="server" ID="lbtnSearch"><%=ReadWriteXml.getAppResource("1013")%></asp:LinkButton></div>--%>
+                           <%--Commented by Gagan Kalyana on 2016-Feb-01 [2]--%>                                                    
+                            <%--<div class="main_left_a"><asp:LinkButton runat="server" ID="lbtnSearch" onClientClick="javascript:WriteCookie('G')"><%=ReadWriteXml.getAppResource("1013")%></asp:LinkButton></div>--%>
+                            <div class="main_left_menu_1"><u><%=ReadWriteXml.getAppResource("1014")%></u></div>
+                            <asp:Table ID="Table2" runat="server" CellPadding="3" CellSpacing="3" Width="100%">
+                                <asp:TableRow>
+                                    <%--Modified by Gagan Kalyana on 2015-Dec-17
+                                    <asp:TableCell BorderColor="White" BorderStyle="Solid" BorderWidth="1px"><span style="color:White"><%=ReadWriteXml.getAppResource("1015")%></span></asp:TableCell>--%>
+                                    <asp:TableCell BorderColor="White" BackColor="#313131" BorderStyle="Solid" BorderWidth="1px"><span style="color:White"><%=ReadWriteXml.getAppResource("1015")%></span></asp:TableCell>
+                                </asp:TableRow>
+                                <asp:TableRow>
+                                    <asp:TableCell BorderColor="White" BorderStyle="Solid" BorderWidth="1px" BackColor="Green"><span style="color:White"><%=ReadWriteXml.getAppResource("1016")%></span></asp:TableCell>                                   
+                                </asp:TableRow>
+                                <asp:TableRow>
+                                    <asp:TableCell BorderColor="White" BorderStyle="Solid" BorderWidth="1px" BackColor="Red"><span style="color:White"><%=ReadWriteXml.getAppResource("1017")%></span></asp:TableCell>                                   
+                                </asp:TableRow>                                
+                           </asp:Table>
+                           <%--Modified by Gagan Kalyana on 2015-Dec-17 [Start]--%>
+                           <button type="button" id="btnColSwt" class="colorSwitch" visible="false"  onclick="colorToggle('click'); return false" runat="server"><%=ReadWriteXml.getAppResource("1253")%></button>
+                           <input id="hdnPageName" type="hidden" runat="server" />
+                           <%--Modified by Gagan Kalyana on 2015-Dec-17 [End]--%>
+                       </div>    
+                    </asp:TableCell>
+                     <%--Commented & Added by Gagan Kalyana on 31-Mar-2015 [Start]--%>
+                    <%--<asp:TableCell">--%>
+                    <asp:TableCell Width="100%">
+                     <%--Commented & Added by Gagan Kalyana on 31-Mar-2015 [End]--%>
+                        <asp:ContentPlaceHolder  ID="MainContent" runat="server"></asp:ContentPlaceHolder>        
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>            
+        </div>
+        <div class="clear"></div>       
+    </div>  	
+    </form>
+    <div class="footer">
+        <hr />
+        <%--Commented by Gagan Kalyana on 2016-Feb-01 [1]
+        <%=ReadWriteXml.getAppResource("1018")%>--%>
+    </div>
+      <%--[7] Commented by Govind on 2015-Mar-19 [Start]--%>
+    <%-- <script type="text/javascript">
+         window.onload = date_time('date_time');         
+     </script>--%>
+    <%--[7] Commented by Govind on 2015-Mar-19 [End]--%>
+    <%-- ' Added By Gagan Kalyana on 2015-Apr-02 [Start]--%>
+    <script type="text/javascript" src="Scripts/date_time.js"></script>
+    <%
+        Dim m_id As Integer = 0
+        If Request.QueryString("id") <> Nothing Then
+            m_id = CDbl(Request("id"))
+        End If
+        %>
+    <%--Commented and Added By Gagan Kalyana on 2015-Apr-02 [Start]--%>
+         
+        <%If m_id = 0 Then%>
+            <meta http-equiv="refresh" content="300" />
+        <%End If%>
+    
+    <script type="text/javascript">
+        //Added by Gagan Kalyana on 2015-May-13 [Start]
+                       function WriteCookie(id) {
+                           cookievalue = id + ";";
+                           document.cookie = "name=" + cookievalue;
+                       }
+       //Added by Gagan Kalyana on 2015-May-13 [End]
+
+
+        var interval = parseInt($("#" + "<%= hdnInterVal.ClientID%>").val())
+        $(document).ready(function () {
+            setInterval('autoRefresh()', interval)
+            date_time('date_time')
+            //Added by Gagan Kalyana on 2015-Dec-17
+            colorToggle("refresh");
+
+        })
+
+        function autoRefresh() {
+            if (getParameterByName("id") == '') {
+                window.location = window.location.href;
+            }
+        }
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+    </script>
+    <%-- ' Added By Gagan Kalyana on 2015-Apr-02 [End]--%>
+      <%-- ' Commented By Gagan Kalyana on 2015-Apr-13 --%>
+    <%-- <img src=""  style="display:none">--%>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RESOURCEFILE>
+	<ITEM ID="1001" VALUE="組立稼動状況見える化システム" />
+  <ITEM ID="1002" VALUE="" />
+	<ITEM ID="1003" VALUE="G-ViA" />
+	<ITEM ID="1004" VALUE="ホーム" />
+	<ITEM ID="1005" VALUE="レポート" />
+	<ITEM ID="1006" VALUE="+ 能率閲覧" />
+	<ITEM ID="1007" VALUE="- 全体" />
+	<ITEM ID="1008" VALUE="- 日次ライン" />
+	<ITEM ID="1009" VALUE="- 月次ライン" />
+	<ITEM ID="1010" VALUE="- 比較ライン" />
+	<ITEM ID="1011" VALUE="+ 生産実績出力" />
+  <ITEM ID="1012" VALUE="履歴" />
+  <ITEM ID="1013" VALUE="* 検索" />
+  <ITEM ID="1014" VALUE="凡例" />
+	<ITEM ID="1015" VALUE="計画停止" />
+	<ITEM ID="1016" VALUE="稼働中" />
+	<ITEM ID="1017" VALUE="異常あり" />
+  <ITEM ID="1018" VALUE="住友電装株式会社 GPPC" />
+	<ITEM ID="1019" VALUE="工場コード:" />
+	<ITEM ID="1020" VALUE="ラインNo=" />
+	<ITEM ID="1021" VALUE="リーダー=" />
+  <ITEM ID="1022" VALUE="作業者=" />
+  <ITEM ID="1023" VALUE="実績数=" />
+  <ITEM ID="1024" VALUE="部門:" />
+  <ITEM ID="1025" VALUE="監督者:" />
+  <ITEM ID="1026" VALUE="作業日:" />
+	<ITEM ID="1027" VALUE="シフト終了:" />
+	<ITEM ID="1028" VALUE="ラインNO:" />
+	<ITEM ID="1029" VALUE="リーダー:" />
+	<ITEM ID="1030" VALUE="シフト:" />
+	<ITEM ID="1031" VALUE="詳細" />
+  <ITEM ID="1032" VALUE="注記:" />
+	<ITEM ID="1033" VALUE="サブリーダー:" />
+  <ITEM ID="1034" VALUE="更新時間:" />
+	<ITEM ID="1035" VALUE="タクトタイム" />
+  <ITEM ID="1036" VALUE="値" />
+  <ITEM ID="1037" VALUE="予定数" />
+	<ITEM ID="1038" VALUE="タクトタイム（秒）" />
+  <ITEM ID="1039" VALUE="(対象)" />
+  <ITEM ID="1040" VALUE="SMH/AMH" />
+  <ITEM ID="1041" VALUE="能率(Di/In)(%)" />
+	<ITEM ID="1042" VALUE="目標能率" />
+  <ITEM ID="1043" VALUE="作業時間" />
+  <ITEM ID="1044" VALUE="値(h)" />
+	<ITEM ID="1045" VALUE="ダウンタイムリミット" />
+  <ITEM ID="1046" VALUE="控除時間" />
+  <ITEM ID="1047" VALUE="停止時間(予定)" />
+  <ITEM ID="1048" VALUE="残業(予定)" />
+  <ITEM ID="1049" VALUE="人員" />
+	<ITEM ID="1050" VALUE="直接" />
+	<ITEM ID="1051" VALUE="リーダー" />
+  <ITEM ID="1052" VALUE="予備" />
+	<ITEM ID="1053" VALUE="合計[人数]" />
+  <ITEM ID="1054" VALUE="率(%)" />
+	<ITEM ID="1055" VALUE="詳細" />
+  <ITEM ID="1056" VALUE="不良" />
+	<ITEM ID="1057" VALUE="導通" />
+	<ITEM ID="1058" VALUE="1次外観" />
+	<ITEM ID="1059" VALUE="2次外観" />
+	<ITEM ID="1060" VALUE="3次外観" />
+	<ITEM ID="1061" VALUE="詳細" />
+  <ITEM ID="1062" VALUE="品番" />
+  <ITEM ID="1063" VALUE="短縮" />
+  <ITEM ID="1064" VALUE="回路" />
+  <ITEM ID="1065" VALUE="Smh" />
+  <ITEM ID="1066" VALUE="能率" />
+	<ITEM ID="1067" VALUE="タクト" />
+  <ITEM ID="1068" VALUE=" Abd" />
+  <ITEM ID="1069" VALUE="Cbd" />
+  <ITEM ID="1070" VALUE="数量" />
+	<ITEM ID="1071" VALUE="生産チャート" />
+	<ITEM ID="1072" VALUE="(ズーム)" />
+	<ITEM ID="1073" VALUE="詳細" />
+  <ITEM ID="1074" VALUE="変更点" />
+  <ITEM ID="1075" VALUE="仮結" />
+  <ITEM ID="1076" VALUE="部完" />
+	<ITEM ID="1077" VALUE="布線" />
+	<ITEM ID="1078" VALUE="テープ巻き" />
+  <ITEM ID="1079" VALUE="1次外観検査" />
+  <ITEM ID="1080" VALUE="導通検査" />
+	<ITEM ID="1081" VALUE=" 2次外観検査" />
+  <ITEM ID="1082" VALUE="人員" />
+	<ITEM ID="1083" VALUE="方法" />
+	<ITEM ID="1084" VALUE="設備" />
+	<ITEM ID="1085" VALUE="材料" />
+	<ITEM ID="1086" VALUE="ダウンタイム" />
+  <ITEM ID="1087" VALUE="停止率:" />
+	<ITEM ID="1088" VALUE="詳細" />
+  <ITEM ID="1089" VALUE="作業時間-人員-設備" />
+  <ITEM ID="1090" VALUE="1.作業時間" />
+  <ITEM ID="1091" VALUE="2.人員" />
+  <ITEM ID="1092" VALUE="3.設備" />
+  <ITEM ID="1093" VALUE="  品目" />
+  <ITEM ID="1094" VALUE="開始" />
+  <ITEM ID="1095" VALUE="終了" />
+  <ITEM ID="1096" VALUE="期間" />
+	<ITEM ID="1097" VALUE="シフト時間" />
+  <ITEM ID="1098" VALUE="停止時間計画" />
+  <ITEM ID="1099" VALUE="No." />
+  <ITEM ID="1100" VALUE="工程" />
+  <ITEM ID="1101" VALUE="計画" />
+  <ITEM ID="1102" VALUE="実績" />
+  <ITEM ID="1103" VALUE="直接合計" />
+  <ITEM ID="1104" VALUE="間接合計" />
+	<ITEM ID="1105" VALUE="ライン外合計" />
+  <ITEM ID="1106" VALUE="率" />
+  <ITEM ID="1107" VALUE="設備" />
+  <ITEM ID="1108" VALUE="作業時間計画=" />
+	<ITEM ID="1109" VALUE="タクトタイム=  作業時間*3600 / 予定生産数 :" />
+	<ITEM ID="1110" VALUE="タクトタイム(対象) = [ﾀｸﾄ* 能率(直接)]/能率(対象) :" />
+  <ITEM ID="1111" VALUE="SMH = 製品のSMH * 予定製品数 :" />
+  <ITEM ID="1112" VALUE="AMH =" />
+  <ITEM ID="1113" VALUE="能率 (直接)= SMH/ AMH :" />
+  <ITEM ID="1114" VALUE="能率 (予備含む) = SMH/" />
+  <ITEM ID="1115" VALUE="* 人員は予備含む :" />
+  <ITEM ID="1116" VALUE="人員(直接のみ) = (1+2+3+4+5+6+7+8+10+11) :" />
+  <ITEM ID="1117" VALUE="人員(予備含む) = 人員(直接のみ) + (12) :" />
+  <ITEM ID="1118" VALUE="不良 - 変更点" />
+  <ITEM ID="1119" VALUE="1.不良詳細" />
+  <ITEM ID="1120" VALUE="2.変更点詳細" />
+  <ITEM ID="1121" VALUE="区分" />
+  <ITEM ID="1122" VALUE="不良内容" />
+  <ITEM ID="1123" VALUE="部位" />
+  <ITEM ID="1124" VALUE="内容" />
+	<ITEM ID="1125" VALUE="1.ダウンタイム詳細" />
+	<ITEM ID="1126" VALUE="2.ダウンタイム合計" />
+  <ITEM ID="1127" VALUE="停止開始" />
+  <ITEM ID="1128" VALUE="停止終了" />
+  <ITEM ID="1129" VALUE="期間(分)" />
+  <ITEM ID="1130" VALUE="時間" />
+  <ITEM ID="1131" VALUE="分" />
+  <ITEM ID="1132" VALUE="生産計画" />
+  <ITEM ID="1133" VALUE="設変" />
+  <ITEM ID="1134" VALUE="Eff Pl" />
+	<ITEM ID="1135" VALUE="シフト" />
+  <ITEM ID="1136" VALUE="索引" />
+  <ITEM ID="1137" VALUE="生産" />
+  <ITEM ID="1138" VALUE="数量計画" />
+  <ITEM ID="1139" VALUE="W3数量" />
+  <ITEM ID="1140" VALUE="実績数" />
+  <ITEM ID="1141" VALUE="* 直接人員 :" />
+  <ITEM ID="1142" VALUE="生産計画 &amp; ﾀｸﾄﾀｲﾑ" />
+	<ITEM ID="1143" VALUE="ラインの対象に基づき" />
+  <ITEM ID="1144" VALUE="生産計画&amp; 能率計画" />
+  <ITEM ID="1145" VALUE="能率(直接)= SMH/ AMH :" />
+  <ITEM ID="1146" VALUE="能率(予備含む) = SMH/" />
+	<ITEM ID="1147" VALUE=" 読み込み中" />
+  <ITEM ID="1148" VALUE="  生産集計" />
+  <ITEM ID="1149" VALUE="組立:" />
+	<ITEM ID="1150" VALUE="ライン:" />
+  <ITEM ID="1151" VALUE="開始日:" />
+  <ITEM ID="1152" VALUE="終了日:" />
+  <ITEM ID="1153" VALUE="部門" />
+	<ITEM ID="1154" VALUE="ライン" />
+  <ITEM ID="1155" VALUE="作業日" />
+  <ITEM ID="1156" VALUE="実際作業時間" />
+  <ITEM ID="1157" VALUE="実際停止時間" />
+	<ITEM ID="1158" VALUE="サイクル時間" />
+  <ITEM ID="1159" VALUE="Amh" />
+  <ITEM ID="1160" VALUE="Diman" />
+  <ITEM ID="1161" VALUE="Inman" />
+  <ITEM ID="1162" VALUE="能率(直接)" />
+  <ITEM ID="1163" VALUE="能率 (間接)" />
+  <ITEM ID="1164" VALUE="能率対象" />
+  <ITEM ID="1165" VALUE="実績能率" />
+  <ITEM ID="1166" VALUE="達成" />
+	<ITEM ID="1167" VALUE="グループ" />
+	<ITEM ID="1168" VALUE="シフト終了" />
+  <ITEM ID="1169" VALUE="印刷日:" />
+  <ITEM ID="1170" VALUE="月次" />
+  <ITEM ID="1171" VALUE="会社" />
+  <ITEM ID="1172" VALUE="月" />
+  <ITEM ID="1173" VALUE="年" />
+	<ITEM ID="1174" VALUE="チャート" />
+  <ITEM ID="1175" VALUE="(*)" />
+  <ITEM ID="1176" VALUE="年次" />
+  <ITEM ID="1177" VALUE="比較" />
+  <ITEM ID="1178" VALUE="注記: 達成=(実績/対象) * 100% " />
+  <ITEM ID="1179" VALUE="[組立合計]" />
+  <ITEM ID="1180" VALUE="[組立1]" />
+  <ITEM ID="1181" VALUE="[組立2]" />
+  <ITEM ID="1182" VALUE="[組立3]" />
+  <ITEM ID="1183" VALUE="[組立4]" />
+  <ITEM ID="1184" VALUE="集計" />
+	<ITEM ID="1185" VALUE="(1)" />
+	<ITEM ID="1186" VALUE="(2)" />
+  <ITEM ID="1187" VALUE="開始日" />
+  <ITEM ID="1188" VALUE="終了日" />
+  <ITEM ID="1189" VALUE="予定数" />
+  <ITEM ID="1190" VALUE="合格数" />
+  <ITEM ID="1191" VALUE="不良数" />
+	<ITEM ID="1192" VALUE="グラフ" />
+	<ITEM ID="1193" VALUE="想定能率(直接)" />
+	<ITEM ID="1194" VALUE="想定能率(間接)" />
+  <ITEM ID="1195" VALUE="生産計画" />
+  <ITEM ID="1196" VALUE="不良発生" />
+  <ITEM ID="1197" VALUE="検索" />
+  <ITEM ID="1198" VALUE="比較" />
+  <ITEM ID="1199" VALUE="能率" />
+  <ITEM ID="1200" VALUE="対象" />
+  <ITEM ID="1201" VALUE="達成" />
+  <ITEM ID="1202" VALUE="合計時間" />
+  <ITEM ID="1203" VALUE="合計時間-合計停止時間" />
+	<ITEM ID="1204" VALUE="コラム" />
+  <ITEM ID="1205" VALUE="直接" />
+	<ITEM ID="1206" VALUE="リーダー" />
+	<ITEM ID="1207" VALUE="ページ" />
+	<ITEM ID="1208" VALUE="- 生産" />
+	<ITEM ID="1209" VALUE="- 能率" />
+	<ITEM ID="1210" VALUE="- 品質履歴" />
+	<ITEM ID="1211" VALUE="- 品質パレート図" />
+	<ITEM ID="1212" VALUE="生産進捗" />
+	<ITEM ID="1213" VALUE="ダウンタイム" />
+	<ITEM ID="1214" VALUE="製番" />
+	<ITEM ID="1215" VALUE="日時" />
+	<ITEM ID="1216" VALUE="検査工程名" />
+	<ITEM ID="1217" VALUE="不良内容" />
+	<ITEM ID="1218" VALUE="件数" />
+	<ITEM ID="1219" VALUE="工程名" />
+	<ITEM ID="1220" VALUE="停止要因" />
+	<ITEM ID="1221" VALUE="回数" />
+	<ITEM ID="1222" VALUE="停止時間(分)" />
+	<ITEM ID="1223" VALUE="計算式" />
+	<ITEM ID="1224" VALUE="(a) 定時" />
+	<ITEM ID="1225" VALUE="(b) 残業時間" />
+	<ITEM ID="1226" VALUE="(c) 昼休み" />
+	<ITEM ID="1227" VALUE="品質履歴レポート" />
+	<ITEM ID="1228" VALUE="(a)+(b)-(c)-(d)" />
+	<ITEM ID="1229" VALUE="能率AMH" />
+	<ITEM ID="1230" VALUE="生産性AMH" />
+	<ITEM ID="1231" VALUE="SMH" />
+	<ITEM ID="1232" VALUE="想定能率" />
+	<ITEM ID="1233" VALUE="想定生産性" />
+	<ITEM ID="1234" VALUE="目標コンベヤスピード" />
+	<!--<ITEM ID="1235" VALUE="((a)+(b)-(c)) * 能率人員" />
+	<ITEM ID="1236" VALUE="((a)+(b)-(c)) * 生産性人員" />-->
+  <ITEM ID="1235" VALUE="(e) * 能率人員" />
+  <ITEM ID="1236" VALUE="(e) * 生産性人員" />
+	<ITEM ID="1237" VALUE="製品のSMH * 予定生産数" />
+	<ITEM ID="1238" VALUE="((e) * 3600) / 予定数量" />
+	<ITEM ID="1239" VALUE="SMH / 能率AMH" />
+	<ITEM ID="1240" VALUE="SMH / 生産性AMH" />
+	<ITEM ID="1241" VALUE="(タクトタイム * 想定能率 ) / 目標能率" />
+	<ITEM ID="1242" VALUE="能率人員" />
+	<ITEM ID="1243" VALUE="生産性人員" />
+	<ITEM ID="1244" VALUE="ダウンタイム(時)" />
+	<ITEM ID="1245" VALUE="日次" />
+	<ITEM ID="1246" VALUE="月次" />
+	<ITEM ID="1247" VALUE="実績能率" />
+	<ITEM ID="1248" VALUE="実績能率(ダウンタイム除く)" />
+	<ITEM ID="1249" VALUE="品質実績レポート (不良一覧)" />
+	<ITEM ID="1250" VALUE="日次能率レポート" />
+	<ITEM ID="1251" VALUE="(e) 稼動時間" />
+	<ITEM ID="1252" VALUE="(d) 控除時間" />
+	<ITEM ID="1253" VALUE="背景色変更" />
+	<ITEM ID="1254" VALUE="戻る" />
+	<ITEM ID="1255" VALUE="ダウンタイム(合計)" />
+	<ITEM ID="1256" VALUE="能率(全体)" />
+	<ITEM ID="1257" VALUE="比較１" />
+	<ITEM ID="1258" VALUE="比較２" />
+	<ITEM ID="1259" VALUE="比較３" />
+	<ITEM ID="1260" VALUE="生産レポート" />
+	<ITEM ID="1261" VALUE="開始日" />
+	<ITEM ID="1262" VALUE="終了日" />
+	<ITEM ID="1263" VALUE="表示" />
+	<ITEM ID="1264" VALUE="印刷日:" />
+	<ITEM ID="1265" VALUE="標準工数(SH)(Sec)" />
+	<ITEM ID="1266" VALUE="実工数(AH)(Sec)" />
+	<ITEM ID="1267" VALUE="実能率(%)" />
+	<ITEM ID="1268" VALUE="生産性(%)" />
+	<ITEM ID="1269" VALUE="実際人員(人)" />
+	<ITEM ID="1270" VALUE="ダウンタイム(秒)" />
+	<ITEM ID="1271" VALUE="実績" />
+	<ITEM ID="1272" VALUE="オプション" />
+	<ITEM ID="1273" VALUE="詳細" />
+	<ITEM ID="1274" VALUE="能率レポート(合計/詳細)" />
+	<ITEM ID="1275" VALUE="期間" />
+	<ITEM ID="1276" VALUE="日次能率レポート/合計" />
+	<ITEM ID="1277" VALUE="日次能率レポート/詳細" />
+	<ITEM ID="1278" VALUE="全て" />
+	<ITEM ID="1279" VALUE="ライン番号" />
+	<ITEM ID="1280" VALUE="ライン名称" />
+	<ITEM ID="1281" VALUE="Grand Total" />
+	<ITEM ID="1282" VALUE="パーセント(％)" />
+	<ITEM ID="1283" VALUE="件数" />
+	<ITEM ID="1284" VALUE="品質パレートイメージ" />
+	<ITEM ID="1285" VALUE="直:" />
+	<ITEM ID="1286" VALUE="リーダー名:" />
+	<ITEM ID="1287" VALUE="間接" />
+	<ITEM ID="1288" VALUE="印刷" />
+	<ITEM ID="1289" VALUE="合計" />
+        <ITEM ID="1290" VALUE="日次能率チャート" />
+  	<ITEM ID="1291" VALUE="タクトタイム" />
+	<ITEM ID="5000" VALUE="5000: シフトリーダーマスタに今週のリーダーが登録されていません。登録してください。" />
+	<ITEM ID="5001" VALUE="5001: 対象日のシフトデータが存在しません" />
+	<ITEM ID="5002" VALUE="5002: 未選択部分は条件１の条件を基に表示を行います。よろしいですか？" />
+	<ITEM ID="5003" VALUE="5003: 終了日は、開始日より以後の日付を選択してください。" />
+	<ITEM ID="5004" VALUE="5004: 表示範囲の最大31日を超えています。条件を再入力して下さい." />
+	<ITEM ID="5005" VALUE="5005: 部門を選択してください" />
+	<ITEM ID="5006" VALUE="5006: ラインを選択してください。" />
+	<ITEM ID="5007" VALUE="5007: 直を選択してください。" />
+	<ITEM ID="5008" VALUE="5008: 対象データなし" />
+</RESOURCEFILE>

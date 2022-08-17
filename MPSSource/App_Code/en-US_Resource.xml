@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RESOURCEFILE>
+  <ITEM ID="1001" VALUE="Global Visualizing in Assembly" />
+  <ITEM ID="1002" VALUE="" />
+  <!--<ITEM ID="1003" VALUE="HAI-V" />-->
+  <ITEM ID="1003" VALUE="G-ViA" />
+  <ITEM ID="1004" VALUE="Home" />
+  <ITEM ID="1005" VALUE="Report" />
+  <!--<ITEM ID="1006" VALUE="+  Efficiency" />-->
+  <ITEM ID="1006" VALUE="+  Efficiency View" />
+  <!--<ITEM ID="1007" VALUE="- Summary" />-->
+  <ITEM ID="1007" VALUE="- Overall" />
+  <!--<ITEM ID="1008" VALUE="- Daily Chart" />-->
+  <ITEM ID="1008" VALUE="- Daily Line" />
+  <!--<ITEM ID="1009" VALUE="- Monthly Chart" />-->
+  <ITEM ID="1009" VALUE="- Monthly Line" />
+  <!--<ITEM ID="1010" VALUE="- Comparision" />-->
+  <ITEM ID="1010" VALUE="- Comparison Line" />
+  <!--<ITEM ID="1011" VALUE="+  Production" />-->
+  <ITEM ID="1011" VALUE="+  Production Result Output" />
+  <ITEM ID="1012" VALUE="History" />
+  <ITEM ID="1013" VALUE="* Search" />
+  <ITEM ID="1014" VALUE="Legend" />
+  <ITEM ID="1015" VALUE="Not Run" />
+  <ITEM ID="1016" VALUE="Running" />
+  <ITEM ID="1017" VALUE="Downtime > Limit" />
+  <ITEM ID="1018" VALUE="Global PIKA PIKA Center, Sumitomo Wiring Systems" />
+  <ITEM ID="1019" VALUE="Factory Code:" />
+  <ITEM ID="1020" VALUE="Line No=" />
+  <ITEM ID="1021" VALUE="Leader=" />
+  <ITEM ID="1022" VALUE="Worker=" />
+  <ITEM ID="1023" VALUE="Actual Qty=" />
+  <ITEM ID="1024" VALUE="SECTION:" />
+  <ITEM ID="1025" VALUE="SUPERVISOR:" />
+  <ITEM ID="1026" VALUE="WORKDATE:" />
+  <ITEM ID="1027" VALUE="SHIFT END:" />
+  <ITEM ID="1028" VALUE="LINE NO:" />
+  <ITEM ID="1029" VALUE="LEADER:" />
+  <ITEM ID="1030" VALUE="SHIFT:" />
+  <!--<ITEM ID="1031" VALUE="Detail(5)" />-->
+  <ITEM ID="1031" VALUE="Detail" />
+  <ITEM ID="1032" VALUE="NOTE:" />
+  <ITEM ID="1033" VALUE="SUB LEADER:" />
+  <ITEM ID="1034" VALUE="UPDATE TIME:" />
+  <ITEM ID="1035" VALUE="Tact Time" />
+  <ITEM ID="1036" VALUE="Value" />
+  <ITEM ID="1037" VALUE="Plan qty" />
+  <ITEM ID="1038" VALUE="Tact time(s)" />
+  <ITEM ID="1039" VALUE="(target)" />
+  <ITEM ID="1040" VALUE="SMH/AMH" />
+  <ITEM ID="1041" VALUE="Eff(Di/In)(%)" />
+  <ITEM ID="1042" VALUE="Eff(target)" />
+  <ITEM ID="1043" VALUE="Working Time" />
+  <ITEM ID="1044" VALUE="Value(h)" />
+  <ITEM ID="1045" VALUE="Downtime limit" />
+  <ITEM ID="1046" VALUE="Deduct time" />
+  <ITEM ID="1047" VALUE="Stop time(plan)" />
+  <ITEM ID="1048" VALUE="Over time(plan)" />
+  <ITEM ID="1049" VALUE="Man Power" />
+  <ITEM ID="1050" VALUE="Worker" />
+  <ITEM ID="1051" VALUE="Leader" />
+  <ITEM ID="1052" VALUE="Spare" />
+  <ITEM ID="1053" VALUE="Total" />
+  <ITEM ID="1054" VALUE="Ratio(%)" />
+  <!--<ITEM ID="1055" VALUE="Detail(1)" />-->
+  <ITEM ID="1055" VALUE="Detail" />
+  <ITEM ID="1056" VALUE="Defect" />
+  <ITEM ID="1057" VALUE="Inspector" />
+  <ITEM ID="1058" VALUE="Self check" />
+  <ITEM ID="1059" VALUE="Inprocess" />
+  <ITEM ID="1060" VALUE="Test" />
+  <!--<ITEM ID="1061" VALUE="Detail(3)" />-->
+  <ITEM ID="1061" VALUE="Detail" />
+  <ITEM ID="1062" VALUE="Product no" />
+  <ITEM ID="1063" VALUE="Short" />
+  <ITEM ID="1064" VALUE="Cir" />
+  <ITEM ID="1065" VALUE="Smh" />
+  <ITEM ID="1066" VALUE="Eff" />
+  <ITEM ID="1067" VALUE="Tact" />
+  <ITEM ID="1068" VALUE="Abd" />
+  <ITEM ID="1069" VALUE="Cbd" />
+  <ITEM ID="1070" VALUE="Qty" />
+  <ITEM ID="1071" VALUE="Production Chart" />
+  <!--<ITEM ID="1072" VALUE="(Zoom out)" />-->
+  <ITEM ID="1072" VALUE="(Zoom)" />
+  <!--<ITEM ID="1073" VALUE="Detail(2)" />-->
+  <ITEM ID="1073" VALUE="Detail" />
+  <ITEM ID="1061" VALUE="Detail" />
+  <ITEM ID="1074" VALUE="Change Point" />
+  <ITEM ID="1075" VALUE="SA" />
+  <ITEM ID="1076" VALUE="Bukan" />
+  <ITEM ID="1077" VALUE="Mount Wire" />
+  <ITEM ID="1078" VALUE="Taping" />
+  <ITEM ID="1079" VALUE="Visual check1" />
+  <ITEM ID="1080" VALUE="Circuit check" />
+  <ITEM ID="1081" VALUE="Visual check2" />
+  <ITEM ID="1082" VALUE="Man" />
+  <ITEM ID="1083" VALUE="Machine" />
+  <ITEM ID="1084" VALUE="Material" />
+  <ITEM ID="1085" VALUE="Method" />
+  <ITEM ID="1086" VALUE="Downtime" />
+  <ITEM ID="1087" VALUE="Act Ratio:" />
+  <!--<ITEM ID="1088" VALUE="Detail(4)" />-->
+  <ITEM ID="1088" VALUE="Detail" />
+  <!--<ITEM ID="1089" VALUE="Working Time-Man Power-Equipment" />-->
+  <ITEM ID="1089" VALUE="Working Time-Manpower Composition" />
+  <ITEM ID="1090" VALUE="1.Working Time" />
+  <ITEM ID="1091" VALUE="2.Manpower Composition" />
+  <ITEM ID="1092" VALUE="3.Equipments" />
+  <ITEM ID="1093" VALUE="Item" />
+  <ITEM ID="1094" VALUE="Start" />
+  <ITEM ID="1095" VALUE="End" />
+  <ITEM ID="1096" VALUE="Duration" />
+  <ITEM ID="1097" VALUE="Shift Time" />
+  <ITEM ID="1098" VALUE="Stop Time Plan" />
+  <ITEM ID="1099" VALUE="No." />
+  <ITEM ID="1100" VALUE="Process" />
+  <ITEM ID="1101" VALUE="Plan" />
+  <ITEM ID="1102" VALUE="Actual" />
+  <ITEM ID="1103" VALUE="Total Direct" />
+  <ITEM ID="1104" VALUE="Total Indirect" />
+  <ITEM ID="1105" VALUE="Total Outline" />
+  <ITEM ID="1106" VALUE="Rate" />
+  <ITEM ID="1107" VALUE="Equipment" />
+  <ITEM ID="1108" VALUE="Working time plan=" />
+  <ITEM ID="1109" VALUE="Tact time=   Working time *3600 / Production Plan Qty :" />
+  <ITEM ID="1110" VALUE="Tact time(target) = [Tact time * Efficiency(Direct)]/Efficiency(Target) :" />
+  <ITEM ID="1111" VALUE="SMH = SMH of a product * Product plan Qty :" />
+  <ITEM ID="1112" VALUE="AMH =" />
+  <ITEM ID="1113" VALUE="Efficiency (Direct)= SMH/ AMH :" />
+  <ITEM ID="1114" VALUE="Efficiency (Include spare) = SMH/" />
+  <ITEM ID="1115" VALUE="* Man power include spare :" />
+  <ITEM ID="1116" VALUE="Man power direct= (1+2+3+4+5+6+7+8+10+11) :" />
+  <ITEM ID="1117" VALUE="Man power include spare = Man power direct + (12) :" />
+  <ITEM ID="1118" VALUE="Defect Details" />
+  <ITEM ID="1119" VALUE="1.Defect Detail" />
+  <ITEM ID="1120" VALUE="2.Defect Summary" />
+  <ITEM ID="1121" VALUE="Type" />
+  <ITEM ID="1122" VALUE="Defect Code" />
+  <ITEM ID="1123" VALUE="Position" />
+  <ITEM ID="1124" VALUE="Content" />
+  <ITEM ID="1125" VALUE="1.Downtime Detail" />
+  <ITEM ID="1126" VALUE="2.Downtime Total" />
+  <ITEM ID="1127" VALUE="Stop Start" />
+  <ITEM ID="1128" VALUE="Stop End" />
+  <ITEM ID="1129" VALUE="Duration(Min.)" />
+  <ITEM ID="1130" VALUE="Times" />
+  <ITEM ID="1131" VALUE="Minute" />
+  <ITEM ID="1132" VALUE="Production Plan" />
+  <ITEM ID="1133" VALUE="Design Change" />
+  <ITEM ID="1134" VALUE="Eff Pl" />
+  <ITEM ID="1135" VALUE="Shift" />
+  <ITEM ID="1136" VALUE="Index" />
+  <ITEM ID="1137" VALUE="Production" />
+  <ITEM ID="1138" VALUE="Qty Plan" />
+  <ITEM ID="1139" VALUE="W3 Qty" />
+  <ITEM ID="1140" VALUE="Qty Act" />
+  <ITEM ID="1141" VALUE="* Man power direct :" />
+  <ITEM ID="1142" VALUE="Production Plan &amp; Tact Time" />
+  <ITEM ID="1143" VALUE="Base on Target of line" />
+  <ITEM ID="1144" VALUE="Production Plan &amp; Plan Eff" />
+  <ITEM ID="1145" VALUE="Efficiency(Direct)= SMH/ AMH :" />
+  <ITEM ID="1146" VALUE="Efficiency(Include spare) = SMH/" />
+  <ITEM ID="1147" VALUE="Đang tải dữ liệu..." />
+  <ITEM ID="1148" VALUE="Production Summary" />
+  <ITEM ID="1149" VALUE="Assy:" />
+  <ITEM ID="1150" VALUE="Line:" />
+  <ITEM ID="1151" VALUE="From:" />
+  <ITEM ID="1152" VALUE="To:" />
+  <ITEM ID="1153" VALUE="Section" />
+  <ITEM ID="1154" VALUE="Line" />
+  <ITEM ID="1155" VALUE="Work date" />
+  <ITEM ID="1156" VALUE="Act Working Hour" />
+  <ITEM ID="1157" VALUE="Act Stop Hour" />
+  <ITEM ID="1158" VALUE="Cycle time" />
+  <ITEM ID="1159" VALUE="Amh" />
+  <ITEM ID="1160" VALUE="Diman" />
+  <ITEM ID="1161" VALUE="Inman" />
+  <ITEM ID="1162" VALUE="EFF (di)" />
+  <ITEM ID="1163" VALUE="EFF (in)" />
+  <ITEM ID="1164" VALUE="EFF target" />
+  <ITEM ID="1165" VALUE="EFF act" />
+  <ITEM ID="1166" VALUE="Achiev" />
+  <ITEM ID="1167" VALUE="Group" />
+  <ITEM ID="1168" VALUE="Shift end" />
+  <ITEM ID="1169" VALUE="Print date:" />
+  <ITEM ID="1170" VALUE="By Month" />
+  <ITEM ID="1171" VALUE="Company" />
+  <ITEM ID="1172" VALUE="Month" />
+  <ITEM ID="1173" VALUE="Year" />
+  <ITEM ID="1174" VALUE="Chart" />
+  <ITEM ID="1175" VALUE="(*)" />
+  <ITEM ID="1176" VALUE="By Year" />
+  <ITEM ID="1177" VALUE="Comparison" />
+  <ITEM ID="1178" VALUE="Note: Achiviement=(Actual/Target) * 100% " />
+  <ITEM ID="1179" VALUE="[TOTAL]" />
+  <ITEM ID="1180" VALUE="[ASY1]" />
+  <ITEM ID="1181" VALUE="[ASY2]" />
+  <ITEM ID="1182" VALUE="[ASY3]" />
+  <ITEM ID="1183" VALUE="[ASY4]" />
+  <ITEM ID="1184" VALUE="Summary" />
+  <ITEM ID="1185" VALUE="(1)" />
+  <ITEM ID="1186" VALUE="(2)" />
+  <ITEM ID="1187" VALUE="From" />
+  <ITEM ID="1188" VALUE="To" />
+  <ITEM ID="1189" VALUE="Planned Qty" />
+  <ITEM ID="1190" VALUE="Passed Qty" />
+  <ITEM ID="1191" VALUE="Defect Qty" />
+  <ITEM ID="1192" VALUE="Graph" />
+  <ITEM ID="1193" VALUE="Eff(Di)(%)" />
+  <ITEM ID="1194" VALUE="Eff(In)(%)" />
+  <ITEM ID="1195" VALUE="Production Plan" />
+  <ITEM ID="1196" VALUE="Defect Occurrence" />
+  <ITEM ID="1197" VALUE="Search" />
+  <ITEM ID="1198" VALUE="Compare" />
+  <ITEM ID="1199" VALUE="Efficiency" />
+  <ITEM ID="1200" VALUE="Target" />
+  <ITEM ID="1201" VALUE="Achiviement" />
+  <ITEM ID="1202" VALUE="Total time" />
+  <ITEM ID="1203" VALUE="Total time - Total Stoptime" />
+  <ITEM ID="1204" VALUE="Column" />
+  <ITEM ID="1205" VALUE="Direct" />
+  <ITEM ID="1206" VALUE="Indirect" />
+  <ITEM ID="1207" VALUE="Page" />
+  <ITEM ID="1208" VALUE="- Production" />
+  <ITEM ID="1209" VALUE="- Efficiency" />
+  <ITEM ID="1210" VALUE="- Quality History" />
+  <ITEM ID="1211" VALUE="- Quality Paretto Chart" />
+  <ITEM ID="1212" VALUE="Production Progress" />
+  <ITEM ID="1213" VALUE="Down Time" />
+  <ITEM ID="1214" VALUE="Order No." />
+  <ITEM ID="1215" VALUE="Date Time" />
+  <ITEM ID="1216" VALUE="Work Process Name" />
+  <ITEM ID="1217" VALUE="Defect Name" />
+  <ITEM ID="1218" VALUE="Quantity" />
+  <ITEM ID="1219" VALUE="Proces Name" />
+  <ITEM ID="1220" VALUE="Downtime Cause" />
+  <ITEM ID="1221" VALUE="Quantity" />
+  <ITEM ID="1222" VALUE="Downtime (Min.)" />
+  <ITEM ID="1223" VALUE="Calculation Format" />
+  <ITEM ID="1224" VALUE="(a) Regular Time" />
+  <ITEM ID="1225" VALUE="(b) OverTime Time" />
+  <ITEM ID="1226" VALUE="(c) Lunch Break" />
+  <ITEM ID="1227" VALUE="Quality History Report" />
+  <ITEM ID="1228" VALUE="(a)+(b)-(c)-(d)" />
+  <ITEM ID="1229" VALUE="Efficiency AMH" />
+  <ITEM ID="1230" VALUE="Productivity AMH" />
+  <ITEM ID="1231" VALUE="SMH" />
+  <ITEM ID="1232" VALUE="Assumption Efficiency" />
+  <ITEM ID="1233" VALUE="Assumption Productivity" />
+  <ITEM ID="1234" VALUE="Target Conveyer Speed" />
+  <!--<ITEM ID="1235" VALUE="((a)+(b)-(c)) * Efficiency Manpower" />
+  <ITEM ID="1236" VALUE="((a)+(b)-(c)) * Productivity Manpower" />-->
+  <ITEM ID="1235" VALUE="(e) * Efficiency Manpower" />
+  <ITEM ID="1236" VALUE="(e) * Productivity Manpower" />
+  <ITEM ID="1237" VALUE="Product SMH * Plan Produce Qty." />
+  <ITEM ID="1238" VALUE="((e) * 3600) / Plan Qty." />
+  <ITEM ID="1239" VALUE="SMH / Efficiency AMH" />
+  <ITEM ID="1240" VALUE="SMH / Productivity AMH" />
+  <ITEM ID="1241" VALUE="(Tact Time * Assumption Efficiency ) / Target Efficiency" />
+  <ITEM ID="1242" VALUE="Efficiency Manpower" />
+  <ITEM ID="1243" VALUE="Productivity Manpower" />
+  <ITEM ID="1244" VALUE="Downtime [Hrs.]" />
+  <ITEM ID="1245" VALUE="Daily" />
+  <ITEM ID="1246" VALUE="Monthly" />
+  <ITEM ID="1247" VALUE="Actual Efficiency" />
+  <ITEM ID="1248" VALUE="Actual Efficiency (Excluding Downtime)" />
+  <ITEM ID="1249" VALUE="Quality History Report (Defect List)" />
+  <ITEM ID="1250" VALUE="Daily Efficiency Report" />
+  <ITEM ID="1251" VALUE="(e) Working Time" />
+  <ITEM ID="1252" VALUE="(d) Deduct Time" />
+  <ITEM ID="1253" VALUE="Color Switch" />
+  <ITEM ID="1254" VALUE="Back" />
+  <ITEM ID="1255" VALUE="Downtime (Total)" />
+  <ITEM ID="1256" VALUE="Efficiency (Overall)" />
+  <ITEM ID="1257" VALUE="Comparison 1" />
+  <ITEM ID="1258" VALUE="Comparison 2" />
+  <ITEM ID="1259" VALUE="Comparison 3" />
+  <ITEM ID="1260" VALUE="Production Report" />
+  <ITEM ID="1261" VALUE="Start Date" />
+  <ITEM ID="1262" VALUE="End Date" />
+  <ITEM ID="1263" VALUE="Output" />
+  <ITEM ID="1264" VALUE="Output Date:" />
+  <ITEM ID="1265" VALUE="Standard MH(SH)(Sec.)" />
+  <ITEM ID="1266" VALUE="Actual MH (AH) (Sec.)" />
+  <ITEM ID="1267" VALUE="Actual Efficiency(%)" />
+  <ITEM ID="1268" VALUE="Productivity(%)" />
+  <ITEM ID="1269" VALUE="Actual Manpower(Person)" />
+  <ITEM ID="1270" VALUE="Downtime(Sec.)" />
+  <ITEM ID="1271" VALUE="Result" />
+  <ITEM ID="1272" VALUE="Option" />
+  <ITEM ID="1273" VALUE="Detail" />
+  <ITEM ID="1274" VALUE="Efficiency Report(Summary/Detail)" />
+  <ITEM ID="1275" VALUE="Period" />
+  <ITEM ID="1276" VALUE="Daily Efficiency Report/Summary" />
+  <ITEM ID="1277" VALUE="Daily Efficiency Report/Detail" />
+  <ITEM ID="1278" VALUE="All" />
+  <ITEM ID="1279" VALUE="Line No" />
+  <ITEM ID="1280" VALUE="Line Name" />
+  <ITEM ID="1281" VALUE="Grand Total" />
+  <ITEM ID="1282" VALUE="Percentage" />
+  <ITEM ID="1283" VALUE="Records" />
+  <ITEM ID="1284" VALUE="Quality Pareto Image" />
+  <ITEM ID="1285" VALUE="Shift Name:" />
+  <ITEM ID="1286" VALUE="Leader Name:" />
+  <ITEM ID="1287" VALUE="Indirect" />
+  <ITEM ID="1288" VALUE="Print" />
+  <ITEM ID="1289" VALUE="Total" />
+  <ITEM ID="1290" VALUE="Daily Efficiency Chart" />
+  <ITEM ID="1290" VALUE="Daily Efficiency Chart" />
+  <ITEM ID="1291" VALUE="Tact time" />
+  
+  <!--Error Message-->
+  <ITEM ID="5000" VALUE="5000: Leader not defined for this week in the Shift Leader Master. Please register" />
+  <ITEM ID="5001" VALUE="5001: No shift exists for selected Work Date." />
+  <ITEM ID="5002" VALUE="5002: Graph will be displayed based on the condition given in comparison 1. Is it ok?" />
+  <ITEM ID="5003" VALUE="5003: End Date cannot be less than Start Date" />
+  <ITEM ID="5004" VALUE="5004: Display range is exceeding 31 days. Please re-enter the condition." />
+  <ITEM ID="5005" VALUE="5005: Please select Section. Cannot Proceed." />
+  <ITEM ID="5006" VALUE="5006: Please select Line. Cannot Proceed." />
+  <ITEM ID="5007" VALUE="5007: Please select Shift. Cannot Proceed." />
+  <ITEM ID="5008" VALUE="5008: No data" />
+</RESOURCEFILE>
